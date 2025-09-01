@@ -110,6 +110,10 @@
 %%\graphicspath{{./}{figures/}}
 %% This is the end of the preamble.  Indicate the beginning of the
 %% manuscript itself with \begin{document}.
+\usepackage{caption}   % 提供 \captionsetup
+\usepackage{booktabs}  % 提供 \toprule \midrule \bottomrule
+\usepackage{multirow}  % 提供 \multirow
+\usepackage{tabularx} 
 
 \begin{document}
 
@@ -232,6 +236,9 @@ Despite extensive efforts, direct observational constraints on the epoch of reio
 %% That way, if you change the order of any elements, LaTeX will
 %% automatically renumber them.
 \include{sections/sec1_intro}
+\include{sections/sec2_method}
+\include{sections/sec3_result}
+\include{sections/sec4_summary}
 
 \section{A short history of AASTeX} 
 

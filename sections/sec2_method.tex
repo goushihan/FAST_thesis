@@ -1,0 +1,23 @@
+\section{METHODOLOGY}
+\subsection{Simulations and Sample Selection}
+As a simplest estimation for the resolution for the single dish telescope, we use the formula:
+\begin{equation}
+    \theta = \frac{\lambda_z}{D},
+\end{equation}
+in which $\theta$ is the angular resolution, $\lambda_z$ is the wavelength of the redshifted observed signal, and $D$ is the effective diameter of the radiotelescope. Using Hubble constant $ H_0 = 67.4 \text{ km s}^{-1} \text{ Mpc}^{-1}$, $\Omega_m = 0.3$, and $\Omega_\Lambda = 0.7$, we can calculate the corresponding angular resolution for our observations, which is shown in table \ref{tab:angular_resolution}.
+
+\begin{table}[h]
+    \caption{Redshifted 21-cm line frequencies, angular resolutions and comoving perpendicular resolutions of the single dish telescopes at different redshifts.}
+    \label{tab:angular_resolution}
+    \centering
+    \begin{tabular}{cccccccccc}
+        \toprule
+        \multirow{2}{*}{$D/\text{m}$}&\multicolumn{3}{c}{$z=5$}&\multicolumn{3}{c}{$z=8$}&\multicolumn{3}{c}{$z=12$}\\
+        \cmidrule(lr){2-10}
+        &$f/\text{MHz}$&$\theta$&$d/\text{Mpc}$&$f/\text{MHz}$&$\theta$&$d/\text{Mpc}$&$f/\text{MHz}$&$\theta$&$d/\text{Mpc}$\\
+        \midrule
+        300         &\multirow{2}{*}{236}&$0.242^\circ$&$34.1$&\multirow{2}{*}{158}&$0.363^\circ$& $58.9$&\multirow{2}{*}{109}&$0.524^\circ$&93.3\\
+        100         &&$0.726^\circ$&$102$ &&$1.08^\circ$& $177$&&$1.57^\circ$&280\\
+        \bottomrule
+    \end{tabular}
+\end{table}
